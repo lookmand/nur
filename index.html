@@ -1,1 +1,75 @@
-index
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#17251f">
+<title>Undangan Pernikahan — Lookman & Nur</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="spider-motion" aria-hidden="true">
+<span class="web-line w1"></span><span class="web-line w2"></span><span class="web-line w3"></span><span class="web-line w4"></span>
+<span class="spider-particle q1"></span><span class="spider-particle q2"></span><span class="spider-particle q3"></span><span class="spider-particle q4"></span>
+</div>
+<div class="garden-motion" aria-hidden="true">
+  <i class="petal p1"></i><i class="petal p2"></i><i class="petal p3"></i><i class="petal p4"></i>
+  <i class="petal p5"></i><i class="petal p6"></i><i class="petal p7"></i><i class="petal p8"></i>
+  <i class="firefly f1"></i><i class="firefly f2"></i><i class="firefly f3"></i><i class="firefly f4"></i>
+</div>
+<div id="opening" class="opening">
+  <div class="opening-content">
+    <p class="eyebrow">THE WEDDING OF</p>
+    <h1>Lookman <span>&</span> Nur</h1>
+    <p class="opening-date">Minggu, 22 November 2026</p>
+    <button id="openBtn">Buka Undangan</button>
+    <p class="guest">Kepada Yth.<br><strong>Tamu Undangan</strong></p>
+  </div>
+</div>
+
+<main id="invitation" class="hidden">
+  <section class="hero">
+<div class="couple-photo"><img src="images/foto-pasangan.svg" alt="Foto pasangan"></div><div class="hero-overlay"></div><div class="hero-content reveal">
+    <p class="eyebrow">THE WEDDING OF</p><h1>Lookman <span>&</span> Nur</h1><p>22 • 11 • 2026</p>
+  </div></section>
+
+  <section class="intro section reveal">
+    <p class="eyebrow">ASSALAMUALAIKUM</p><h2>Dengan penuh kebahagiaan</h2>
+    <p>Dengan memohon rahmat dan ridho Allah SWT, kami mengundang Bapak/Ibu/Saudara/i untuk hadir di hari bahagia kami.</p>
+    <div class="names"><b>Rizky Lookmantyo</b><span>&</span><b>Nurlaela</b></div>
+    <p>Putra pertama dari Bapak broto & Ibu Siti<br>Putri kedua dari Bapak Budi & Ibu Rina</p>
+  </section>
+
+  <section class="quote section"><div class="card">
+    <p>“Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu pasangan hidup...”</p><small>QS. Ar-Rum: 21</small>
+  </div></section>
+
+  <section class="event section reveal">
+    <p class="eyebrow">SAVE THE DATE</p><h2>Hari Bahagia Kami</h2>
+    <div class="event-grid">
+      <div class="event-card"><span>AKAD NIKAH</span><strong>09.00 WIB</strong><p>Minggu<br>22 November 2026</p></div>
+      <div class="event-card"><span>RESEPSI</span><strong>11.00–14.00 WIB</strong><p>Gedung Graha Melati<br>Tonggara</p></div>
+    </div>
+    <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=Gedung+Graha+Melati+Tonggara" target="_blank">📍 Lihat Lokasi</a>
+  </section>
+
+  <section class="countdown section reveal"><p class="eyebrow">COUNTING DOWN TO</p><h2>Hari Pernikahan</h2>
+    <div class="timer"><div><b id="days">00</b><span>Hari</span></div><div><b id="hours">00</b><span>Jam</span></div><div><b id="minutes">00</b><span>Menit</span></div><div><b id="seconds">00</b><span>Detik</span></div></div>
+  </section>
+
+  <section class="gallery section reveal"><p class="eyebrow">OUR MOMENTS</p><h2>Sepenggal Cerita</h2>
+    <div class="photos">
+      <img src="images/foto1.jpg" alt="Foto 1"><img src="images/foto2.jpg" alt="Foto 2"><img class="wide" src="images/foto3.jpg" alt="Foto 3">
+    </div>
+  </section>
+
+  <section class="rsvp section reveal"><p class="eyebrow">RSVP</p><h2>Kehadiran Anda</h2>
+    <p>Merupakan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu.</p>
+    <a class="wa-btn" href="https://wa.me/6282329444537?text=Halo%20Lookman%20%26%20Nur%2C%20saya%20akan%20hadir%20di%20acara%20pernikahan." target="_blank">Konfirmasi Kehadiran</a>
+  </section>
+  <footer><p>Terima kasih atas doa dan kehadirannya.</p><strong>Lookman & Nur</strong><small>Made with love ♡</small></footer>
+</main>
+
+<audio id="music" src="backsound.mp3" loop preload="auto"></audio>
+<script src="script.js"></script>
+</body></html>
