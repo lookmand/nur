@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500&display=swap');
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#1b2b24;color:#eef2ea;font-family:'DM Sans',sans-serif;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;z-index:-2;background:url('images/taman-bg.svg') center/cover no-repeat;pointer-events:none}
+body::after{content:"";position:fixed;inset:0;z-index:-1;background:transparent;pointer-events:none}
+.garden-motion{position:fixed;inset:0;z-index:5;pointer-events:none;overflow:hidden}
+.petal{position:absolute;width:10px;height:15px;border-radius:100% 0 100% 0;background:#e8d8c5aa;filter:blur(.15px);animation:petalFall 11s linear infinite}
+.p1{left:8%;top:-5%;animation-delay:0s}.p2{left:24%;top:-10%;animation-delay:2.5s;transform:scale(.7)}
+.p3{left:45%;top:-8%;animation-delay:5s;transform:scale(.55)}.p4{left:66%;top:-12%;animation-delay:1.4s;transform:scale(.8)}
+.p5{left:82%;top:-5%;animation-delay:6.5s;transform:scale(.65)}.p6{left:35%;top:-15%;animation-delay:8s;transform:scale(.5)}
+.p7{left:56%;top:-10%;animation-delay:3.7s;transform:scale(.75)}.p8{left:92%;top:-8%;animation-delay:9s;transform:scale(.5)}
+@keyframes petalFall{0%{transform:translate3d(0,-10vh,0) rotate(0deg);opacity:0}10%{opacity:.7}50%{transform:translate3d(35px,55vh,0) rotate(160deg)}100%{transform:translate3d(-25px,115vh,0) rotate(340deg);opacity:0}}
+.firefly{position:absolute;width:4px;height:4px;border-radius:50%;background:#e8dfb5;box-shadow:0 0 10px 3px #e8dfb566;opacity:.15;animation:glow 4s ease-in-out infinite}
+.f1{left:15%;top:42%}.f2{left:78%;top:32%;animation-delay:1.2s}.f3{left:54%;top:68%;animation-delay:2.1s}.f4{left:88%;top:73%;animation-delay:3s}
+@keyframes glow{0%,100%{opacity:.12;transform:translate(0,0)}50%{opacity:.75;transform:translate(12px,-18px)}}.hidden{display:none}
+.opening{position:fixed;inset:0;z-index:99;display:grid;place-items:center;overflow:hidden;background:#18251f;color:#f8f3ea;background-image:linear-gradient(#ffffff08,#14261a35),url('images/taman-bg.svg');background-size:cover;background-position:center}
+.opening-content{text-align:center;padding:30px;max-width:500px}.eyebrow{letter-spacing:4px;font-size:11px;font-weight:500;margin:0 0 16px;opacity:.8}
+.opening h1,.hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(60px,16vw,100px);font-weight:400;line-height:.8;margin:25px 0}.opening h1 span,.hero h1 span{font-style:italic;font-size:.7em}
+.opening-date{letter-spacing:3px;font-size:13px;margin:30px 0}.opening button,.map-btn,.wa-btn{border:1px solid #d9c8aa;background:#d9c8aa;color:#26332d;border-radius:40px;padding:14px 25px;font:inherit;cursor:pointer;text-decoration:none;display:inline-block}.guest{font-size:12px;line-height:1.8;margin-top:45px;opacity:.8}
+.hero{min-height:100svh;position:relative;display:grid;place-items:end center;color:white;text-align:center;background-image:linear-gradient(transparent 20%,#15221d55),url('images/taman-bg.svg');background-size:cover;background-position:center}
+.hero-content{position:relative;padding:80px 25px}.hero h1{margin-bottom:25px}.section{padding:90px 24px;max-width:850px;margin:auto;text-align:center}.intro h2,.event h2,.countdown h2,.gallery h2,.rsvp h2{font-family:'Cormorant Garamond',serif;font-size:48px;font-weight:500;margin:5px 0 20px}
+.intro>p:not(.eyebrow),.rsvp>p{max-width:620px;margin:0 auto;line-height:1.9;color:#657069}.names{margin:40px 0;font-family:'Cormorant Garamond',serif;font-size:31px;display:flex;justify-content:center;gap:22px;align-items:center;flex-wrap:wrap}.names span{font-style:italic;font-size:24px}
+.quote{background:#dce0d8;max-width:none}.card{max-width:650px;margin:auto;border:1px solid #87918755;padding:45px 28px}.card p{font-family:'Cormorant Garamond',serif;font-size:25px;font-style:italic;line-height:1.5}
+.event-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin:35px 0}.event-card{background:#fffaf3;padding:35px 15px;box-shadow:0 10px 30px #2a332010}.event-card span{display:block;font-size:10px;letter-spacing:3px}.event-card strong{display:block;font-family:'Cormorant Garamond';font-size:30px;margin:15px 0}.event-card p{line-height:1.7;color:#657069}
+.timer{display:flex;justify-content:center;gap:12px;margin-top:35px}.timer div{background:#fffaf3;width:82px;padding:16px 5px}.timer b{display:block;font-family:'Cormorant Garamond';font-size:32px}.timer span{font-size:9px;text-transform:uppercase;letter-spacing:1px}
+.photos{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:35px}.photos img{width:100%;height:260px;object-fit:cover;display:block}.photos .wide{grid-column:1/-1;height:300px}
+.wa-btn{margin-top:28px;background:#26332d;color:#fff;border:0}footer{padding:65px 20px;text-align:center;background:#18251f;color:#f8f3ea}footer strong{display:block;font:45px 'Cormorant Garamond';margin:15px}footer small{opacity:.5}
+.reveal{opacity:0;transform:translateY(25px);transition:.8s ease}.reveal.show{opacity:1;transform:none}
+@media(max-width:560px){.event-grid{grid-template-columns:1fr}.section{padding:70px 20px}.intro h2,.event h2,.countdown h2,.gallery h2,.rsvp h2{font-size:42px}.timer div{width:70px}.timer{gap:7px}.photos img{height:210px}.photos .wide{height:240px}}
+
+.section{position:relative}
+.intro,.event,.countdown,.gallery,.rsvp{background:rgba(244,239,231,.91);color:#26332d}
+.quote{background:rgba(220,224,216,.86);color:#26332d}
+footer{position:relative}
+@media(prefers-reduced-motion:reduce){.petal,.firefly{animation:none}.reveal{transition:none}}
+
+/* BACKGROUND LEBIH JELAS */
+body::before{filter:brightness(1.18) saturate(1.08)}
+.opening::before,.hero::before{opacity:.15}
+
+/* === SPIDER FUTURISTIC === */
+body{background:#050817!important;color:#eef3ff!important;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;z-index:-3;background:url("images/spider-futuristic-bg.svg") center/cover fixed no-repeat}
+body::after{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(circle at 50% 35%,transparent 0 25%,#02040b66 85%);pointer-events:none}
+.opening{background-image:linear-gradient(#05081722,#05081766),url("images/spider-futuristic-bg.svg")!important;background-size:cover!important}
+.hero{background:linear-gradient(180deg,#05081711 20%,#050817bb 100%),url("images/spider-futuristic-bg.svg")!important;background-size:cover!important;background-position:center!important;overflow:hidden}
+.intro,.event,.countdown,.gallery,.rsvp{background:rgba(7,13,28,.94)!important;color:#edf3ff!important}
+.quote{background:rgba(13,23,48,.93)!important;color:#edf3ff!important}
+.spider-motion{position:fixed;inset:0;z-index:4;pointer-events:none;overflow:hidden}
+.web-line{position:absolute;width:150vw;height:1px;background:linear-gradient(90deg,transparent,#e8efff99,transparent);opacity:.45;animation:webPulse 6s ease-in-out infinite}
+.w1{top:18%;left:-20%;transform:rotate(18deg)}.w2{top:44%;left:-20%;transform:rotate(-12deg);animation-delay:1.3s}.w3{top:72%;left:-15%;transform:rotate(8deg);animation-delay:2.5s}.w4{top:92%;left:-20%;transform:rotate(-7deg);animation-delay:3.5s}
+@keyframes webPulse{0%,100%{opacity:.12}50%{opacity:.65}}
+.spider-particle{position:absolute;width:5px;height:5px;border-radius:50%;background:#ff3158;box-shadow:0 0 15px #ff3158;opacity:.15;animation:float 7s ease-in-out infinite}
+.q1{left:14%;top:30%}.q2{left:78%;top:25%;animation-delay:1.7s}.q3{left:30%;top:70%;animation-delay:3.2s}.q4{left:87%;top:75%;animation-delay:4.6s}
+@keyframes float{50%{opacity:.8;transform:translate(18px,-25px)}}
+.couple-photo{position:absolute;left:50%;top:14%;transform:translateX(-50%);width:min(78vw,370px);aspect-ratio:9/11;border:1px solid #ffffff55;border-radius:28px;overflow:hidden;box-shadow:0 0 45px #e21b4540,0 25px 70px #000b;z-index:1}
+.couple-photo img{width:100%;height:100%;object-fit:cover;filter:blur(7px) saturate(.9) brightness(.8);transform:scale(1.08)}
+.couple-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#ff234022,#07101c55 65%,#07101ccc)}
+@media(prefers-reduced-motion:reduce){.web-line,.spider-particle{animation:none}}

@@ -1,0 +1,6 @@
+const opening=document.getElementById('opening'),invitation=document.getElementById('invitation'),music=document.getElementById('music');
+document.getElementById('openBtn').onclick=async()=>{opening.style.transition='opacity .8s,transform .8s';opening.style.opacity='0';opening.style.transform='scale(1.03)';setTimeout(()=>{opening.remove();invitation.classList.remove('hidden')},800);try{music.volume=.45;await music.play()}catch(e){}};
+const target=new Date('2026-11-22T09:00:00+07:00').getTime();
+function countdown(){let d=Math.max(0,target-Date.now());days.textContent=String(Math.floor(d/86400000)).padStart(2,'0');hours.textContent=String(Math.floor(d%86400000/3600000)).padStart(2,'0');minutes.textContent=String(Math.floor(d%3600000/60000)).padStart(2,'0');seconds.textContent=String(Math.floor(d%60000/1000)).padStart(2,'0')}setInterval(countdown,1000);countdown();
+new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12}).observe(document.querySelector('.reveal'));
+document.querySelectorAll('.reveal').forEach(x=>new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12}).observe(x));
