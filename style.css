@@ -34,7 +34,7 @@ footer{position:relative}
 @media(prefers-reduced-motion:reduce){.petal,.firefly{animation:none}.reveal{transition:none}}
 
 /* BACKGROUND LEBIH JELAS */
-body::before{filter:brightness(1.18) saturate(1.08)}
+body::before{filter:brightness(1.10) saturate(1.08)}
 .opening::before,.hero::before{opacity:.15}
 
 /* === SPIDER FUTURISTIC === */
