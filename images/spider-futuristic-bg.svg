@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1600">
+<defs>
+<linearGradient id="b" x2="1" y2="1"><stop stop-color="#050817"/><stop offset=".55" stop-color="#111d3d"/><stop offset="1" stop-color="#290917"/></linearGradient>
+<radialGradient id="r"><stop stop-color="#ef1744" stop-opacity=".7"/><stop offset="1" stop-color="#ef1744" stop-opacity="0"/></radialGradient>
+<radialGradient id="u"><stop stop-color="#187cff" stop-opacity=".35"/><stop offset="1" stop-color="#187cff" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="900" height="1600" fill="url(#b)"/><rect width="900" height="1600" fill="url(#r)"/><rect width="900" height="1600" fill="url(#u)"/>
+<g fill="#030612"><path d="M0 1100V850h90v250h50V760h65v340h45V900h80v200h50V720h65v380h45V840h80v260h45V750h65v350h50V690h60v410h65v-260h90v260H0z"/></g>
+<g fill="none" stroke="#e7edff" stroke-opacity=".38" stroke-width="2">
+<path d="M450 0V540M0 330L450 540M900 250L450 540M80 0L450 540M820 0L450 540M0 850L450 540M900 900L450 540"/>
+<path d="M370 445Q450 485 530 445M290 350Q450 450 610 350M200 255Q450 410 700 255M110 155Q450 375 790 155"/>
+</g>
+<g fill="#ff3158"><circle cx="100" cy="550" r="3"/><circle cx="790" cy="480" r="2"/><circle cx="170" cy="800" r="2"/><circle cx="700" cy="760" r="3"/></g>
+<g transform="translate(450 520)" fill="#ed1d43"><ellipse rx="24" ry="58"/><path d="M-12 20L-115 82l10 14 105-55zM12 20l115 62-10 14-105-55zM-15 0L-112-38l-6 15 98 44zM15 0l112-38 6 15-98 44z"/></g>
+<path d="M0 1120Q230 1050 450 1125T900 1100V1600H0Z" fill="#d9163e" opacity=".08"/>
+</svg>

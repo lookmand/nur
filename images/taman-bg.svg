@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1400" preserveAspectRatio="xMidYMid slice">
+<defs>
+  <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#182a24"/>
+    <stop offset=".52" stop-color="#263b30"/>
+    <stop offset="1" stop-color="#15251f"/>
+  </linearGradient>
+  <radialGradient id="glow"><stop stop-color="#d9c8aa" stop-opacity=".22"/><stop offset="1" stop-color="#d9c8aa" stop-opacity="0"/></radialGradient>
+  <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+    <stop stop-color="#30483a"/><stop offset="1" stop-color="#14231e"/>
+  </linearGradient>
+</defs>
+<rect width="900" height="1400" fill="url(#sky)"/>
+<circle cx="680" cy="220" r="230" fill="url(#glow)"/>
+<circle cx="190" cy="330" r="150" fill="#dce8d5" opacity=".035"/>
+<!-- soft distant bushes -->
+<path d="M0 780 Q110 670 220 770 T450 760 T680 750 T900 770 V1400 H0Z" fill="#21382d"/>
+<path d="M0 900 Q120 800 250 900 T500 880 T760 900 T900 880 V1400 H0Z" fill="url(#ground)"/>
+<!-- simple tree silhouettes -->
+<g fill="#13261f" opacity=".8">
+ <path d="M110 860 L125 520 Q90 500 72 450 Q120 475 148 455 Q175 420 205 420 Q175 455 185 485 Q220 480 250 505 Q205 525 168 520 L180 860Z"/>
+ <path d="M720 850 L735 500 Q700 480 680 430 Q730 455 755 435 Q785 400 815 405 Q785 445 795 470 Q830 465 858 490 Q815 515 775 505 L790 850Z"/>
+</g>
+<!-- grass -->
+<g stroke="#91aa8f" stroke-width="3" stroke-linecap="round" opacity=".35" fill="none">
+ <path d="M20 1010q15-55 30-80M35 1010q0-55-20-78M70 1020q18-50 35-72M830 1020q-5-60-25-85M855 1020q12-55 38-75"/>
+</g>
+<!-- small garden flowers -->
+<g opacity=".75">
+ <g transform="translate(115 1040)">
+  <circle r="8" fill="#ead7bd"/><circle cx="0" cy="-13" r="9" fill="#c9d9c1"/><circle cx="12" cy="-4" r="9" fill="#c9d9c1"/><circle cx="-12" cy="-4" r="9" fill="#c9d9c1"/><circle cx="0" cy="9" r="9" fill="#c9d9c1"/>
+ </g>
+ <g transform="translate(770 1080) scale(.8)">
+  <circle r="8" fill="#ead7bd"/><circle cx="0" cy="-13" r="9" fill="#d7c6b1"/><circle cx="12" cy="-4" r="9" fill="#d7c6b1"/><circle cx="-12" cy="-4" r="9" fill="#d7c6b1"/><circle cx="0" cy="9" r="9" fill="#d7c6b1"/>
+ </g>
+ <g transform="translate(450 1170) scale(.55)">
+  <circle r="8" fill="#ead7bd"/><circle cx="0" cy="-13" r="9" fill="#d2dfc9"/><circle cx="12" cy="-4" r="9" fill="#d2dfc9"/><circle cx="-12" cy="-4" r="9" fill="#d2dfc9"/><circle cx="0" cy="9" r="9" fill="#d2dfc9"/>
+ </g>
+</g>
+</svg>
